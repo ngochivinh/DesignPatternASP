@@ -6,8 +6,8 @@ namespace DesignPatternASP.DesignPattern.Bridge
     {
         public void Log(string message)
         {
-            msg += $" [{DateTime.Now}]";
-            msg += "\r\n";
+            message += $" [{DateTime.Now}]";
+            message += "\r\n";
             File.AppendAllText(AppSettings.LogFileFolder + "/errorlog.txt", message);
         }
     }
